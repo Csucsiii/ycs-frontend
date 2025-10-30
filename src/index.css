@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "tailwindcss";
+
+
+:root {
+    --base-green: #1b5e20;
+    --base-lime: #76ff03;
+    --base-light-lime: #3f8b00;
+    --base-dark-green: #051310;
+    --base-white: #ffffff;
+    --base-greener: #071c18;
+}
+
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: var(--color-zinc-900);
+}
+
+@theme {
+    --color-base-green: var(--base-green);
+    --color-base-lime: var(--base-lime);
+    --color-base-dark-green: var(--base-dark-green);
+    --color-base-white: var(--base-white);
+    --color-base-greener: var(--base-greener);
+}
+
+.liquid-glass {
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 0.1rem solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 1vh;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--base-green);
+    border-radius: 0.2rem;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--base-lime);
+    border-radius: 0.2rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--base-light-lime);
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
